@@ -1,7 +1,1 @@
-{
-  "users": [
-    { "name": "Arthur", "country": "Brazil" },
-    { "name": "Nicolas", "country": "Ecuador" },
-    { "name": "Megumi", "country": "Japan" }
-  ]
-}
+{"users":[{"id":"arthur-brazil","name":"Arthur","country":"Brazil"}]}

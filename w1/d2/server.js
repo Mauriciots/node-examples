@@ -1,14 +1,15 @@
 const http = require("http");
 const fs = require("fs");
+const usersController = require("./usersController");
 
-// const users = [
-//   { name: "Arthur", country: "Brazil" },
-//   { name: "Nicolas", country: "Ecuador" },
-//   { name: "Megumi", country: "Japan" },
-// ];
+const users = [
+  { name: "Arthur", country: "Brazil" },
+  { name: "Nicolas", country: "Ecuador" },
+  { name: "Megumi", country: "Japan" },
+];
 const server = http.createServer((request, response) => {
   console.log("url", request.url);
-  if (request.url === "readFile") {
+  if (request.url === "/readFile") {
     fs.readFile("index.html", "utf8", (error, data) => {
       if (error) {
         console.log("error on read file", error);
@@ -65,10 +66,22 @@ const server = http.createServer((request, response) => {
     });
   }
   if (request.url === "/users") {
-    console.log("method", request.method);
-    response.writeHead(200, { "content-type": "application/json" });
-    response.write(JSON.stringify({ users }));
-    response.end();
+    switch (request.method) {
+      case "GET":
+        break;
+      case "POST":
+        response.writeHead(201, contentType);
+        break;
+      case "PUT":
+        response.writeHead(204, contentType);
+        break;
+      case "DELETE":
+        response.writeHead(204, contentType);
+        break;
+      default:
+        response.writeHead(405, contentType);
+        break;
+    }
   }
 });
 

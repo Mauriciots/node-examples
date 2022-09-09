@@ -1,0 +1,43 @@
+GET http://localhost:3000/users
+Content-Type: application/json
+
+###
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "Misato",
+    "country": "Japan"
+}
+
+###
+
+PUT http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "id": 2,
+    "name": "Kento",
+    "country": "Japan"
+}
+
+###
+
+DELETE http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "id": 2,
+    "name": "Kento Honda",
+    "country": "Japan"
+}
+
+###
+HEAD http://localhost:3000/users
+Content-Type: application/json
+
+###
+
+GET http://localhost:3000/readFile
+Content-Type: application/json

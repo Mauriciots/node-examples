@@ -15,4 +15,4 @@
  *
  */
 
-const pets = [{ name: "Zoey", age: 1, type: "dog" }];
+const pets = [{ id: 1, name: "Zoey", age: 1, type: "dog" }];

@@ -7,8 +7,8 @@ POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-    "name": "Misato",
-    "country": "Japan"
+    "name": "Emir",
+    "country": "Turkey"
 }
 
 ###
@@ -17,9 +17,9 @@ PUT http://localhost:3000/users
 Content-Type: application/json
 
 {
-    "id": 2,
-    "name": "Kento",
-    "country": "Japan"
+    "id": 7,
+    "name": "Ozan",
+    "country": "Turkey"
 }
 
 ###
@@ -28,9 +28,7 @@ DELETE http://localhost:3000/users
 Content-Type: application/json
 
 {
-    "id": 2,
-    "name": "Kento Honda",
-    "country": "Japan"
+    "id": 7
 }
 
 ###

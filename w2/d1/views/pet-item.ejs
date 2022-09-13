@@ -1,0 +1,11 @@
+<li style="padding: 8px; padding-left: 0;">
+    <%=pet.id%>. <%=pet.name%>, <%=pet.age%> year(s) old, <%=pet.type%>
+    <a href="/edit/<%=pet.id%>" style="padding-left: 8px;">Edit</a>
+    <form
+        action="/delete/<%=pet.id%>"
+        method="post" 
+        style="display: inline-block; padding-left: 8px;"
+    >
+        <button type="submit">Delete</button>
+    </form>
+</li>

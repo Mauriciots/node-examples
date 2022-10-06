@@ -1,0 +1,17 @@
+GET http://localhost:3030/students
+
+###
+
+POST http://localhost:3030/students
+Content-Type: application/json
+
+{
+    "id": 193,
+    "name": "Megumi Akama",
+    "email": "akamamegumi@gmail.com",
+    "phone": "+16043642731",
+    "github": "akamamegumi",
+    "start_date": "2022-01-01T08:00:00.000Z",
+    "end_date": null,
+    "class_id": null
+}
